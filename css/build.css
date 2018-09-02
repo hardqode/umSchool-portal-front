@@ -632,6 +632,9 @@ header {
       transition: background .2s;
       background: linear-gradient(123.69deg, rgba(40, 38, 36, 0.3) 0%, rgba(20, 22, 22, 0.3) 100.67%);
       padding: 26px 24px 22px; }
+      @media (max-width: 991px) {
+        .courses .course-item .course-item-container {
+          padding: 18px 16px; } }
       .courses .course-item .course-item-container p {
         font-style: normal;
         font-weight: 500;
