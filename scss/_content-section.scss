@@ -748,6 +748,9 @@
         font-size: 14px;
         color: $black;
         margin-bottom: 0;
+        @media(max-width: 991px){
+          margin-bottom: 16px;
+        }
       }
     }
     .hw-status {

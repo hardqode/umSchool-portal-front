@@ -812,6 +812,9 @@ header {
     font-size: 14px;
     color: #252525;
     margin-bottom: 0; }
+    @media (max-width: 991px) {
+      .lessons .lessons-item .description p {
+        margin-bottom: 16px; } }
   .lessons .lessons-item .hw-status {
     margin-top: 14px; }
     .lessons .lessons-item .hw-status a {
