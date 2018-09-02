@@ -1,0 +1,91 @@
+.select2-container .select2-selection--single .select2-selection__rendered {
+  font-size: 16px;
+  color: #1a1a1a;
+  padding: 10px 37px 10px 16px;
+}
+
+.select2:hover {
+  .select2-selection--single {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+.select2-container--default .select2-selection--single {
+  height: 48px;
+
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+}
+
+.select2 {
+  width: auto !important;
+  margin-right: 12px;
+}
+.select2-dropdown{
+  width: auto !important;
+}
+.select2-dropdown {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+}
+.select2-container--open .select2-dropdown--above{
+  top: -25px;
+  overflow: hidden;
+  border-radius: 6px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin-right: 4px;
+  &:before {
+    content: url("../assets/svg/arrow-down.svg");
+    position: absolute;
+    opacity: .5;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  b {
+    display: none;
+  }
+}
+
+.select2-results__option {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background: rgba(52, 26, 17, 0.07);
+  color:$black;
+}
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple{
+  border-color: $orangeDeep;
+}
+.select2-container--default .select2-results__option[aria-selected=true] {
+  background: white;
+  color: $orange;
+}
+
+.select2-container--open .select2-dropdown--below {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin-top: 4px;
+  overflow: hidden;
+  max-height: 176px;
+  overflow-y: scroll;
+}
+
+.select2-results__option .select2-results__option--highlighted {
+}
+

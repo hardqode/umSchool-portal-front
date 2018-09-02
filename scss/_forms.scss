@@ -1,0 +1,52 @@
+.form-container {
+  width: 100%;
+  margin-bottom: 22px;
+  position: relative;
+  label {
+    line-height: 17px;
+    font-size: 14px;
+    color: $black;
+    margin-bottom: 4px;
+    width: 100%;
+  }
+  input, textarea {
+    outline: none !important;
+    line-height: 17px;
+    font-size: 14px;
+    color: $black;
+    width: 100%;
+    padding-left: 14px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    &:hover {
+      border: 1px solid rgba(0, 0, 0, 0.4);
+    }
+    &:focus {
+      border: 1px solid $orange;
+    }
+    &.error {
+      border-color:#E20000 ;
+      + .error-msg {
+        display: block;
+      }
+    }
+  }
+  textarea{
+    padding-right: 29px;
+    padding-bottom: 0;
+    font-size: 14px;
+    line-height: 21px;
+
+  }
+  .error-msg {
+    display: none;
+    position: absolute;
+    bottom: -18px;
+    right: 0;
+    line-height: 18px;
+    color: #E20000;
+    font-size: 13px;
+  }
+}

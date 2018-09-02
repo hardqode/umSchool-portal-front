@@ -1,0 +1,112 @@
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  line-height: 23px;
+  font-size: 20px;
+  color: $black;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 18px;
+  @media (max-width: 991px) {
+    font-size: 22px;
+    line-height: normal;
+  }
+}
+
+h3 {
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 24px;
+  color: #1A1A1A;
+}
+
+p {
+  font-weight: 300;
+  line-height: 29px;
+  font-size: 20px;
+  color: $black;
+  &.secondary{
+    color: $secondaryBlack;
+  }
+}
+
+a{
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.link-w-icon {
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+  text-align: right;
+  color: #252525;
+  display: flex;
+  align-items: center;
+  &[aria-describedby] {
+    .arrow {
+      margin-left: 8px;
+      transform: rotate(180deg);
+    }
+  }
+  .arrow {
+    margin-left: 8px;
+  }
+  &:hover{
+    color:$black;
+    text-decoration: none;
+  }
+  .icon-container {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    display: flex;
+    img {
+      margin: auto;
+    }
+    svg {
+      margin: auto;
+    }
+  }
+  .icon {
+    margin: auto;
+  }
+}
+
+.link-icon{
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  display: flex;
+  svg{
+    margin: auto;
+    path{
+      fill:$orange;
+    }
+  }
+  &:hover{
+    svg{
+      path{
+        fill:$orangeDeep;
+      }
+    }
+  }
+}
+.label-gray{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 13px;
+  color: $black;
+  padding: 3px 7px;
+  border-radius: 12px;
+  background-color: rgba(124, 111, 90, 0.16);
+}

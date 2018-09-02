@@ -1,0 +1,51 @@
+button {
+  outline: none !important;
+  border: 0;
+}
+
+.button {
+  padding: 11px 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: all .2s;
+  cursor: pointer;
+  &.btn-lg{
+    padding: 15px 28px 14px;
+  }
+  &.btn-orange{
+    border: 1px solid $orange;
+    color: white;
+    background-color: $orange;
+    &:hover{
+      border-color: $orangeDeep;
+      background-color: $orangeDeep;
+    }
+  }
+  &.btn-orange-outline{
+    color: $orange;
+    border:1px solid $orange ;
+    background-color: transparent;
+    &:hover{
+      color: white;
+      background-color: $orangeDeep;
+      border-color: $orangeDeep ;
+    }
+  }
+}
+.btn-icon{
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  svg{
+    margin-right: 9px;
+    opacity: .3;
+  }
+  &:hover{
+    svg{
+      opacity: .6;
+    }
+  }
+}
