@@ -362,10 +362,12 @@ header {
       font-size: 15px;
       font-weight: bold;
       line-height: 14px;
-      max-width: 86px; }
+      max-width: 68px; }
       .masters-groups .master-group-item .master-group-item__price .price {
         font-size: 30px;
         line-height: 33px; }
+      .masters-groups .master-group-item .master-group-item__price.plus {
+        max-width: 86px; }
     .masters-groups .master-group-item .splitter {
       margin-top: 18px;
       margin-bottom: 16px;
@@ -399,6 +401,9 @@ header {
         .masters-groups .master-group-item .extra-container p .label-gray {
           margin-left: 6px;
           color: #252525; }
+      @media (max-width: 991px) {
+        .masters-groups .master-group-item .extra-container .button {
+          margin-top: 14px; } }
 
 .homeworks .title-section {
   display: flex;

@@ -193,8 +193,11 @@
       font-size: 15px;
       font-weight: bold;
       line-height: 14px;
+      max-width: 68px;
+      &.plus{
+        max-width: 86px;
 
-      max-width: 86px;
+      }
     }
     .splitter {
       margin-top: 18px;
@@ -231,6 +234,11 @@
         .label-gray {
           margin-left: 6px;
           color: $black;
+        }
+      }
+      .button{
+        @media(max-width:991px){
+          margin-top: 14px;
         }
       }
     }
