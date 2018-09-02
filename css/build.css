@@ -546,13 +546,21 @@ header {
     height: 96px;
     margin-right: 16px;
     margin-bottom: 18px; }
+    @media (max-width: 991px) {
+      .teacher-description .avatar {
+        width: 100%;
+        text-align: center;
+        margin-right: 0; } }
     .teacher-description .avatar img {
+      width: 96px;
       max-width: 100%; }
   .teacher-description .name {
     margin-right: auto; }
     @media (max-width: 991px) {
       .teacher-description .name {
-        margin-bottom: 14px; } }
+        margin-bottom: 14px;
+        text-align: center;
+        width: 100%; } }
     .teacher-description .name p {
       font-family: Ubuntu;
       font-weight: bold;
@@ -570,7 +578,7 @@ header {
       .teacher-description .stat {
         margin-bottom: 8px; } }
     .teacher-description .stat.mr-32 {
-      margin-right: 32px; }
+      margin-right: 28px; }
     .teacher-description .stat .num {
       font-weight: bold;
       line-height: 35px;
