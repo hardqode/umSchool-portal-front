@@ -314,12 +314,39 @@ header {
       width: 60px;
       height: 60px;
       margin-right: 16px;
-      border-radius: 100%; }
+      border-radius: 100%;
+      position: relative; }
       .masters-groups .master-group-item .master-group-item__img:hover {
         border: 2px solid #F19137; }
       @media (max-width: 991px) {
         .masters-groups .master-group-item .master-group-item__img {
           display: none; } }
+      .masters-groups .master-group-item .master-group-item__img .floating-info {
+        display: none;
+        position: absolute;
+        top: 0;
+        transform: translateX(-27%) translateY(-115%);
+        background: rgba(37, 37, 37, 0.9);
+        border-radius: 4px;
+        padding: 6px 12px;
+        width: auto; }
+        .masters-groups .master-group-item .master-group-item__img .floating-info .name {
+          font-weight: bold;
+          line-height: normal;
+          font-size: 15px;
+          text-align: center;
+          color: white;
+          margin-bottom: 0;
+          white-space: nowrap; }
+        .masters-groups .master-group-item .master-group-item__img .floating-info .teachs {
+          margin-bottom: 0;
+          font-weight: normal;
+          line-height: normal;
+          font-size: 12px;
+          text-align: center;
+          color: #FFFFFF;
+          opacity: 0.6;
+          white-space: nowrap; }
     .masters-groups .master-group-item .master-group-item__mobileImg {
       width: 60px;
       height: 60px;

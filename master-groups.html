@@ -198,6 +198,10 @@
                             <div class="master-group-item">
                                 <input type="checkbox" hidden id="m1" value="1050">
                                 <div class="master-group-item__img">
+                                    <div class="floating-info">
+                                        <p class="name">Клим Корнеевец</p>
+                                        <p class="teachs">преподаватель химии</p>
+                                    </div>
                                     <img src="./assets/avatar.png" class="img-fluid">
                                 </div>
                                 <div class="master-group-item__text">
@@ -237,6 +241,11 @@
                             <div class="master-group-item">
                                 <input type="checkbox" hidden id="m2" value="1050">
                                 <div class="master-group-item__img">
+                                    <div class="floating-info">
+                                        <p class="name">Клим Корнеевец</p>
+                                        <p class="teachs">преподаватель химии</p>
+                                    </div>
+
                                     <img src="./assets/avatar.png" class="img-fluid">
                                 </div>
                                 <div class="master-group-item__text">
@@ -276,6 +285,10 @@
                             <div class="master-group-item">
                                 <input type="checkbox" hidden id="m3" value="1050">
                                 <div class="master-group-item__img">
+                                    <div class="floating-info">
+                                        <p class="name">Клим Корнеевец</p>
+                                        <p class="teachs">преподаватель химии</p>
+                                    </div>
                                     <img src="./assets/avatar.png" class="img-fluid">
                                 </div>
                                 <div class="master-group-item__text">
@@ -315,6 +328,10 @@
                             <div class="master-group-item">
                                 <input type="checkbox" hidden id="m4" value="1050">
                                 <div class="master-group-item__img">
+                                    <div class="floating-info">
+                                        <p class="name">Клим Корнеевец</p>
+                                        <p class="teachs">преподаватель химии</p>
+                                    </div>
                                     <img src="./assets/avatar.png" class="img-fluid">
                                 </div>
                                 <div class="master-group-item__text">
@@ -380,7 +397,12 @@
         })
     })
 </script>
-
+<script>
+    $('.master-group-item__img').on('click',function () {
+        var fi = $(this).find('.floating-info');
+        fi.toggle();
+    })
+</script>
 <script>
     $(document).ready(function () {
         $('.select2').select2({

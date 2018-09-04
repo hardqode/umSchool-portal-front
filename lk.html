@@ -160,6 +160,10 @@
                             <h1>Мои мастер-группы</h1>
                             <div class="master-group-item">
                                 <div class="master-group-item__img">
+                                    <div class="floating-info">
+                                        <p class="name">Клим Корнеевец</p>
+                                        <p class="teachs">преподаватель химии</p>
+                                    </div>
                                     <img src="./assets/avatar.png" class="img-fluid">
                                 </div>
                                 <div class="master-group-item__text">
@@ -183,6 +187,10 @@
                             </div>
                             <div class="master-group-item">
                                 <div class="master-group-item__img">
+                                    <div class="floating-info">
+                                        <p class="name">Клим Корнеевец</p>
+                                        <p class="teachs">преподаватель химии</p>
+                                    </div>
                                     <img src="./assets/avatar2.png" class="img-fluid">
 
                                 </div>
@@ -375,6 +383,12 @@
     })
     $('.switcher').on('click',function () {
       $(this).parent().find('input:not(:checked)').click();
+    })
+</script>
+<script>
+    $('.master-group-item__img').on('click',function () {
+        var fi = $(this).find('.floating-info');
+        fi.toggle();
     })
 </script>
 </body>
