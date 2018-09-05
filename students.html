@@ -2,9 +2,222 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta content="width = device-width,initial-scale=1" name="viewport">
+    <title>UmSchool</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="./css/build.css">
 </head>
 <body>
+<header>
+    <div class="container">
+        <div class="row align-items-center">
 
+            <div class=" col-auto d-lg-none">
+                <a href="#" class="link-w-icon" role="button" data-toggle="popover" data-trigger="focus">
+                    <div class="icon-container">
+                        <img src="./assets/svg/burger.svg" class="icon" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-auto logo-container d-none d-lg-block">
+                <a href="lk.html">
+                    <img src="./assets/svg/logo.svg" alt="">
+                </a>
+            </div>
+            <div class=" ml-auto ml-lg-0 col-auto px-lg-3">
+                <a href="#" class="link-w-icon" role="button" data-toggle="popover-menu" data-trigger="focus">
+                    <div class="icon-container">
+                        <img src="./assets/svg/user.svg" class="icon" alt="">
+                    </div>
+                    <span class="d-none d-lg-block">Константин К. Н.</span>
+                    <img src="./assets/svg/arrow-down.svg" alt="" class="arrow">
+                </a>
+            </div>
+            <div class="col-auto pl-lg-3 pl-0">
+
+                <a href="lk.html" class="link-w-icon">
+                    <div class="icon-container">
+                        <img src="./assets/svg/home.svg" class="icon" alt="">
+                    </div>
+                    <span class="d-none d-lg-block">                    Личный кабинет
+</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="content-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 d-none pr-lg-0 d-lg-block">
+                <div class="left-menu-container">
+                    <ul class="">
+                        <li>
+                            <a href="#" class="link-w-icon">
+                                <div class="icon-container">
+                                    <svg width="22" height="17" class="icon" viewBox="0 0 22 17" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <rect width="22" height="17" fill="black" fill-opacity="0"/>
+                                            <path d="M17.7692 9.24375V13.5516C17.7692 15.8925 12.8708 17 10.1538 17C7.57138 17 2.53846 15.8168 2.53846 13.5516V8.20165L10.1538 12.3352L17.7692 9.24375ZM10.9298 0L0 4.8875L10.1538 10.4125L19.4615 6.65805V12.75H21.1538V5.7375L10.9298 0ZM22 17H18.6154C19.1045 16.15 19.4615 14.875 19.4615 13.6H21.1538C21.1538 14.8886 21.4847 16.0302 22 17Z"
+                                                  fill="#7C6F5A"/>
+                                        </g>
+                                    </svg>
+
+                                </div>
+                                Мастер-группы
+                            </a>
+                        </li>
+                        <li class="sub-menu">
+                            <ul>
+                                <li><a href="#">Биология</a></li>
+                                <li><a href="#">Математика</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link-w-icon">
+                                <div class="icon-container">
+                                    <svg width="16" height="20" class="icon" viewBox="0 0 16 20" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <rect width="16" height="20" fill="black" fill-opacity="0"/>
+                                            <path d="M16 10.8333V0H0V20H6.7272C10.6128 20 9.3952 13.3333 9.3952 13.3333C11.8024 13.9542 16 13.6825 16 10.8333ZM12.8 5H3.2V4.16667H12.8V5ZM12.8 7.5H3.2V6.66667H12.8V7.5ZM12.8 10H3.2V9.16667H12.8V10ZM11.1272 15.1858C12.7648 15.5842 14.9712 14.9533 16 14.2033C14.8048 15.8683 11.816 18.96 10.0544 19.9375C10.9792 18.9642 11.3048 16.4092 11.1272 15.1858Z"
+                                                  fill="#7C6F5A"/>
+                                        </g>
+                                    </svg>
+
+                                </div>
+                                Курсы
+                            </a>
+                        </li>
+                        <li class="sub-menu">
+                            <ul>
+                                <li><a href="#">Разбиение задачи на подзадачи, вспомогательный алгоритм</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="link-w-icon active">
+                                <div class="icon-container">
+                                    <svg width="22" height="24" class="icon" viewBox="0 0 22 24" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <g>
+                                            <rect width="22" height="24" fill="black" fill-opacity="0"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M6.902 14C5.18 12.61 4 10.032 4 7.963C4 4.869 6.158 3.073 8.187 3.002C9.028 2.989 9.916 3.201 10.581 3.572C10.406 2.294 9.834 1.313 9.237 0.614L10.604 0C10.887 0.407 11.176 1.129 11.365 1.979C11.748 1.284 12.213 0.717 12.84 0.351C13.509 -0.04 14.618 -0.061 15.358 0.079C15.171 0.737 14.781 1.592 13.867 2.154C13.305 2.499 12.4 2.676 11.483 2.607C11.525 2.89 11.556 3.181 11.57 3.474C12.252 3.11 13.01 2.99 13.813 3.002C15.842 3.073 18 4.869 18 7.963C18 10.032 16.82 12.61 15.098 14H22V16H2.5C2.224 16 2 16.224 2 16.5C2 16.776 2.224 17 2.5 17H22V19H3.5C2.672 19 2 19.672 2 20.5C2 21.328 2.672 22 3.5 22H22V24H3.5C1.568 24 0 22.432 0 20.5C0 19.67 0.29 18.907 0.773 18.307C0.297 17.852 0 17.21 0 16.5C0 15.12 1.12 14 2.5 14H6.902ZM22 21H4V20H22V21ZM9.376 5.4C7.733 6.629 7.341 8.85 8.956 12C8.201 11.598 6.586 9.953 6.604 8.055C6.62 6.379 8.017 5.325 9.376 5.4Z"
+                                                  fill="#7C6F5A"/>
+                                        </g>
+                                    </svg>
+
+                                </div>
+                                Домашние задания
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-9 px-lg-0">
+                <div class="content-container">
+                    <div class="content">
+                        <div class="students-container">
+                            <div class="title-container">
+                                <select class="select2" name="education">
+                                    <option value="1">Новые</option>
+                                    <option value="1">Новые</option>
+                                    <option value="1">Новые</option>
+                                    <option value="1">Новые</option>
+                                </select>
+                                <select class="select2" name="education">
+                                    <option value="1">Все дисциплины</option>
+                                    <option value="1">Все дисциплины</option>
+                                    <option value="1">Все дисциплины</option>
+                                    <option value="1">Все дисциплины</option>
+                                </select>
+                            </div>
+                            <div class="students-row">
+                                <div class="student-item">
+                                    <h2>Михаил Евграфов</h2>
+                                    <div class="courses">
+                                        <p>«Взаимодействие неаллельных генов»</p>
+                                        <p>Биология</p>
+                                    </div>
+                                    <div class="splitter"></div>
+                                    <div class="extra-container">
+                                        <p class="secondary">Отправлено <span class="label-gray">18.06.208</span>
+                                        </p>
+                                        <p class="secondary">Редактировано <span class="label-gray">19.06.208</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="student-item">
+                                    <h2>Константин Константинопольский</h2>
+                                    <div class="courses">
+                                        <p>«Взаимодействие неаллельных генов»</p>
+                                        <p>Биология</p>
+                                    </div>
+                                    <div class="splitter"></div>
+                                    <div class="extra-container">
+                                        <p class="secondary">Отправлено <span class="label-gray">18.06.208</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="student-item">
+                                    <h2>Александр Пирогов</h2>
+                                    <div class="courses">
+                                        <p>«Взаимодействие неаллельных генов»</p>
+                                        <p>Биология</p>
+                                    </div>
+                                    <div class="splitter"></div>
+                                    <div class="extra-container">
+                                        <p class="secondary">Отправлено <span class="label-gray">18.06.208</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+<script>
+    $(function () {
+        $('[data-toggle="popover-menu"]').popover({
+            html: true,
+            placement: 'bottom',
+            content: '<div class="popover-menu"><ul><li><a href="#">Профиль</a></li><li><a href="#">Выйти</a></li></ul> </div>'
+        })
+    })
+    $(function () {
+        $('[data-toggle="master-menu"]').popover({
+            html: true,
+            placement: 'bottom',
+            content: '<div class="popover-menu"><ul><li><a href="#">Редактировать</a></li><li><a href="#">Удалить</a></li></ul> </div>'
+        })
+    })
+</script>
+
+<script>
+    $(document).ready(function () {
+        $('.select2').select2({
+            minimumResultsForSearch: -1
+        });
+    });
+</script>
 </body>
 </html>

@@ -242,41 +242,41 @@
       background-size: 12px 1px;
       background-repeat: repeat-x;
     }
-    .extra-container {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
+  }
+}
+.extra-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  p {
+    margin-bottom: 0;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 13px;
+    margin-right: 24px;
+    @media(max-width: 991px) {
       width: 100%;
-      p {
+      margin-bottom: 16px;
+      &:last-of-type {
         margin-bottom: 0;
-        font-family: Ubuntu;
-        font-style: normal;
-        font-weight: normal;
-        line-height: normal;
-        font-size: 13px;
-        margin-right: 24px;
-        @media(max-width: 991px) {
-          width: 100%;
-          margin-bottom: 16px;
-          &:last-of-type {
-            margin-bottom: 0;
-          }
-        }
-        .label-gray {
-          margin-left: 6px;
-          color: $black;
-        }
       }
-      .button{
-        @media(max-width:991px){
-          margin-top: 14px;
-        }
-      }
-      .btn-icon{
-        svg {
-          margin-right: 0;
-        }
-      }
+    }
+    .label-gray {
+      margin-left: 6px;
+      color: $black;
+    }
+  }
+  .button{
+    @media(max-width:991px){
+      margin-top: 14px;
+    }
+  }
+  .btn-icon{
+    svg {
+      margin-right: 0;
     }
   }
 }
@@ -1462,5 +1462,58 @@
       }
     }
   }
+}
 
+.students-container{
+  display: flex;
+  flex-wrap: wrap;
+  .title-container{
+    margin-bottom: 22px;
+  }
+  .students-row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .student-item{
+      width: 100%;
+      background: rgba(52, 26, 17, 0.05);
+      border-radius: 6px;
+      padding: 20px 24px 14px;
+      margin-bottom: 18px;
+      .splitter {
+        margin-top: 18px;
+        margin-bottom: 16px;
+        width: calc(100% + 48px);
+        height: 1px;
+        margin-left: -24px;
+        margin-right: -24px;
+        background-image: linear-gradient(to right, rgba(37, 37, 37, 0.4) 10%, rgba(255, 255, 255, 0) 0%);
+        background-position: bottom;
+        background-size: 12px 1px;
+        background-repeat: repeat-x;
+      }
+      .courses{
+        display: flex;
+        p{
+          line-height: 20px;
+          font-size: 14px;
+          margin-bottom: 0px;
+          padding-right: 18px;
+          &:not(:last-of-type){
+            position: relative;
+            &:after{
+              position: absolute;
+              content: '•';
+              right: 6px;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              color: rgba(37, 37, 37, 0.3);
+            }
+          }
+        }
+      }
+    }
+
+  }
 }
