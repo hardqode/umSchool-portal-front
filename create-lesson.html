@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.4/css/froala_editor.min.css' rel='stylesheet' type='text/css' />
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.4/css/froala_style.min.css' rel='stylesheet' type='text/css' />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"
+          type="text/css"/>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.4/css/froala_editor.min.css' rel='stylesheet'
+          type='text/css'/>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.4/css/froala_style.min.css' rel='stylesheet'
+          type='text/css'/>
 
     <link rel="stylesheet" href="./css/build.css">
 </head>
@@ -144,17 +147,19 @@
                                 </div>
                             </div>
                             <div class="question-container">
-                                <div class="form-container">
-                                    <label for="ex16">Задание №16</label>
-                                    <textarea rows="5" id="ex16" required></textarea>
-                                </div>
-                                <div class="form-container tip">
-                                    <label for="ex16tip1">Подсказка №1</label>
-                                    <textarea rows="5" id="ex16tip1" required></textarea>
-                                </div>
-                                <div class="form-container tip">
-                                    <label for="ex16tip2">Подсказка №2</label>
-                                    <textarea rows="5" id="ex16tip2" required></textarea>
+                                <div class="question-inputs">
+                                    <div class="form-container">
+                                        <label for="ex16">Задание №16</label>
+                                        <textarea rows="5" id="ex16" required></textarea>
+                                    </div>
+                                    <div class="form-container tip">
+                                        <label for="ex16tip1">Подсказка №1</label>
+                                        <textarea rows="5" id="ex16tip1" required></textarea>
+                                    </div>
+                                    <div class="form-container tip">
+                                        <label for="ex16tip2">Подсказка №2</label>
+                                        <textarea rows="5" id="ex16tip2" required></textarea>
+                                    </div>
                                 </div>
                                 <button class="button btn-orange-outline border-0 add-tip">Добавить подсказку</button>
                             </div>
@@ -172,7 +177,8 @@
 <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.4/js/froala_editor.min.js'></script>
+<script type='text/javascript'
+        src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.4/js/froala_editor.min.js'></script>
 <script>
     $(function () {
         $('[data-toggle="popover-menu"]').popover({
@@ -220,9 +226,21 @@
         });
     });
 </script>
-
-<script> $(function() { $('#lesson-description').froalaEditor({
-    placeholderText: ''
-}) }); </script>
+<script>
+    $('.add-tip').on('click',function () {
+        var tips = $(this).parent().find('.tip');
+        var container = $(this).parent().find('.question-inputs');
+        var num = tips.length+1;
+        $(container).append('<div class="form-container tip">\n' +
+            '                                    <label for="ex16tip' + num + '">Подсказка №' + num + '</label>\n' +
+            '                                    <textarea rows="5" id="ex16tip' + num + '" required></textarea>\n' +
+            '                                </div>')
+    })
+</script>
+<script> $(function () {
+    $('#lesson-description').froalaEditor({
+        placeholderText: ''
+    })
+}); </script>
 </body>
 </html>
