@@ -1152,6 +1152,7 @@
 .tip-container {
   position: relative;
   .tip-block {
+    z-index: 10;
     display: none;
     position: absolute;
     top: 0;
