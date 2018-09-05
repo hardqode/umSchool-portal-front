@@ -1178,6 +1178,57 @@ header {
       .tip-container .tip-block .add-tip:hover {
         color: white; }
 
+.teacher-info-change-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px; }
+  .teacher-info-change-container .change-avatar-block {
+    width: 96px;
+    height: 96px;
+    margin-right: 16px;
+    margin-bottom: 26px;
+    border-radius: 100%;
+    position: relative;
+    cursor: pointer; }
+    .teacher-info-change-container .change-avatar-block img {
+      max-width: 100%; }
+    .teacher-info-change-container .change-avatar-block .overlay {
+      border-radius: 100%;
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      transition: all .2s;
+      background-color: rgba(241, 145, 55, 0.8); }
+      .teacher-info-change-container .change-avatar-block .overlay svg {
+        margin: auto; }
+    .teacher-info-change-container .change-avatar-block:hover .overlay {
+      opacity: 1; }
+  .teacher-info-change-container .form-container {
+    margin-bottom: 8px; }
+  .teacher-info-change-container input {
+    padding-top: 10px;
+    padding-bottom: 11px; }
+  .teacher-info-change-container .fio-block {
+    width: 264px;
+    margin-right: auto; }
+  .teacher-info-change-container .stats-block input {
+    max-width: 56px; }
+  .teacher-info-change-container .stats-block .form-container {
+    display: flex;
+    align-items: center; }
+  .teacher-info-change-container .stats-block label {
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 12px;
+    max-width: 82px;
+    color: rgba(37, 37, 37, 0.5); }
+
 .select2-container .select2-selection--single .select2-selection__rendered {
   font-size: 16px;
   color: #1a1a1a;
