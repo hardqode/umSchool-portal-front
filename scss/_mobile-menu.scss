@@ -1,0 +1,22 @@
+.mobile-menu{
+  .modal-dialog{
+    margin: 0;
+    height: 100vh;
+    width: 256px;
+    .modal-content{
+      height: 100%;
+      border: 0;
+      border-radius: 0;
+    .close-modal{
+      margin-bottom: 10px;
+      padding-left: 22px;
+      padding-top: 18px;
+      .btn-icon{
+        svg{
+          opacity: 1;
+        }
+      }
+    }
+    }
+  }
+}
