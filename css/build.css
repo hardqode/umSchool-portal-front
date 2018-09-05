@@ -1192,9 +1192,12 @@ header {
     margin-bottom: 26px;
     border-radius: 100%;
     position: relative;
-    cursor: pointer; }
+    cursor: pointer;
+    overflow: hidden; }
     .teacher-info-change-container .change-avatar-block img {
-      max-width: 100%; }
+      max-width: 100%;
+      height: 100%;
+      width: 100%; }
     .teacher-info-change-container .change-avatar-block .overlay {
       border-radius: 100%;
       opacity: 0;
