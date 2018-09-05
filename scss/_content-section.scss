@@ -272,6 +272,11 @@
           margin-top: 14px;
         }
       }
+      .btn-icon{
+        svg {
+          margin-right: 0;
+        }
+      }
     }
   }
 }
@@ -619,6 +624,15 @@
       .button {
         padding-top: 7px;
         padding-bottom: 7px;
+      }
+      .btn-container{
+        display: flex;
+      }
+      .btn-icon{
+        svg{
+          opacity: 1;
+          margin-right: 0;
+        }
       }
     }
   }
@@ -1072,7 +1086,7 @@
       }
     }
     .text-area {
-      p {
+      .text-area__heading {
         font-weight: 500;
         line-height: 22px;
         font-size: 16px;
@@ -1131,5 +1145,91 @@
       margin-top: 24px;
     }
   }
+}
+.tip-container{
+  position: relative;
+  .tip-block{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(37, 37, 37, 0.98);
+    border-radius: 4px;
+    padding: 28px 24px 18px;
+    color: white;
+    .close-tip{
+      width: 12px;
+      height: 12px;
+      opacity: .3;
+      position: absolute;
+      right: 9px;
+      top: 8px;
+      line-height: 1;
+      img{
+        max-width: 100%;
+      }
+      &:hover{
+        opacity:1
+      }
+    }
 
+    .heading{
+      font-weight: 500;
+      line-height: 22px;
+      font-size: 16px;
+      color: white;
+      margin-bottom: 6px;
+      .total{
+        opacity: .4;
+        font-weight: normal;
+        line-height: 18px;
+        font-size: 13px;
+        margin-left: 10px;
+      }
+    }
+    .tip-text{
+      margin-bottom: 14px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 19px;
+      font-size: 14px;
+      color: white;
+    }
+    .tip-tools{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .dots{
+        display: flex;
+        margin-left: auto;
+        .dot-item{
+          width: 8px;
+          height: 8px;
+          margin-right: 8px;
+          background-color: white;
+          opacity: .16;
+          border-radius: 100%;
+          &:hover{
+            opacity: .5;
+          }
+          &.active{
+            opacity: 1;
+            background: $orangeDeep;
+          }
+          &:last-of-type{
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .add-tip{
+      font-weight: 500;
+      line-height: 19px;
+      font-size: 14px;
+      color: $orange;
+      &:hover{
+        color: white;
+      }
+    }
+  }
 }

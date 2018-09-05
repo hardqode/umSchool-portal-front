@@ -20,8 +20,28 @@
     }
   }
   li {
-    &:hover {
+    &:not(.sub-menu):hover {
       background: rgba(52, 26, 17, .06);
+    }
+  }
+  .sub-menu{
+    padding-left: 40px;
+    ul{
+      width: auto;
+      margin-bottom: 0;
+    }
+    li{
+      a{
+        display: block;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 18px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 10px;
+        font-size: 14px;
+        color: $black;
+      }
     }
   }
   .link-w-icon {

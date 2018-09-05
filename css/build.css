@@ -431,6 +431,8 @@ header {
       @media (max-width: 991px) {
         .masters-groups .master-group-item .extra-container .button {
           margin-top: 14px; } }
+      .masters-groups .master-group-item .extra-container .btn-icon svg {
+        margin-right: 0; }
 
 .homeworks .title-section {
   display: flex;
@@ -709,6 +711,11 @@ header {
       .courses .course-item .course-item-container .button {
         padding-top: 7px;
         padding-bottom: 7px; }
+      .courses .course-item .course-item-container .btn-container {
+        display: flex; }
+      .courses .course-item .course-item-container .btn-icon svg {
+        opacity: 1;
+        margin-right: 0; }
 
 .back-link {
   margin-top: 42px;
@@ -1055,7 +1062,7 @@ header {
     .homework-exercise .exercise-item .answer-variants input[type="radio"]:checked + label, .homework-exercise .exercise-item .answer-variants input[type="checkbox"]:checked + label {
       background-color: #F19137;
       color: white; }
-  .homework-exercise .exercise-item .text-area p {
+  .homework-exercise .exercise-item .text-area .text-area__heading {
     font-weight: 500;
     line-height: 22px;
     font-size: 16px;
@@ -1099,6 +1106,77 @@ header {
         margin-bottom: 0; }
   .homework-exercise .exercise-item .controls-row {
     margin-top: 24px; }
+
+.tip-container {
+  position: relative; }
+  .tip-container .tip-block {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(37, 37, 37, 0.98);
+    border-radius: 4px;
+    padding: 28px 24px 18px;
+    color: white; }
+    .tip-container .tip-block .close-tip {
+      width: 12px;
+      height: 12px;
+      opacity: .3;
+      position: absolute;
+      right: 9px;
+      top: 8px;
+      line-height: 1; }
+      .tip-container .tip-block .close-tip img {
+        max-width: 100%; }
+      .tip-container .tip-block .close-tip:hover {
+        opacity: 1; }
+    .tip-container .tip-block .heading {
+      font-weight: 500;
+      line-height: 22px;
+      font-size: 16px;
+      color: white;
+      margin-bottom: 6px; }
+      .tip-container .tip-block .heading .total {
+        opacity: .4;
+        font-weight: normal;
+        line-height: 18px;
+        font-size: 13px;
+        margin-left: 10px; }
+    .tip-container .tip-block .tip-text {
+      margin-bottom: 14px;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 19px;
+      font-size: 14px;
+      color: white; }
+    .tip-container .tip-block .tip-tools {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .tip-container .tip-block .tip-tools .dots {
+        display: flex;
+        margin-left: auto; }
+        .tip-container .tip-block .tip-tools .dots .dot-item {
+          width: 8px;
+          height: 8px;
+          margin-right: 8px;
+          background-color: white;
+          opacity: .16;
+          border-radius: 100%; }
+          .tip-container .tip-block .tip-tools .dots .dot-item:hover {
+            opacity: .5; }
+          .tip-container .tip-block .tip-tools .dots .dot-item.active {
+            opacity: 1;
+            background: #EB821F; }
+          .tip-container .tip-block .tip-tools .dots .dot-item:last-of-type {
+            margin-right: 0; }
+    .tip-container .tip-block .add-tip {
+      font-weight: 500;
+      line-height: 19px;
+      font-size: 14px;
+      color: #F19137; }
+      .tip-container .tip-block .add-tip:hover {
+        color: white; }
 
 .select2-container .select2-selection--single .select2-selection__rendered {
   font-size: 16px;
@@ -1280,8 +1358,23 @@ header {
       width: 203px;
       height: 1px;
       background: #E3E3E3; }
-  .left-menu-container li:hover {
+  .left-menu-container li:not(.sub-menu):hover {
     background: rgba(52, 26, 17, 0.06); }
+  .left-menu-container .sub-menu {
+    padding-left: 40px; }
+    .left-menu-container .sub-menu ul {
+      width: auto;
+      margin-bottom: 0; }
+    .left-menu-container .sub-menu li a {
+      display: block;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 18px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      padding-left: 10px;
+      font-size: 14px;
+      color: #252525; }
   .left-menu-container .link-w-icon {
     padding-bottom: 8px;
     padding-top: 8px;
