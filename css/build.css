@@ -1167,6 +1167,20 @@ header {
       line-height: 19px;
       font-size: 14px;
       color: white; }
+    .tip-container .tip-block .owl-carousel .owl-dots {
+      display: initial;
+      float: right;
+      margin-top: 0; }
+    .tip-container .tip-block .owl-carousel .owl-dot {
+      width: 16px; }
+      .tip-container .tip-block .owl-carousel .owl-dot:hover span {
+        background-color: rgba(255, 255, 255, 0.5); }
+      .tip-container .tip-block .owl-carousel .owl-dot.active span {
+        background: #F19137; }
+      .tip-container .tip-block .owl-carousel .owl-dot span {
+        width: 8px;
+        height: 8px;
+        background-color: rgba(255, 255, 255, 0.16); }
     .tip-container .tip-block .tip-tools {
       display: flex;
       align-items: center;

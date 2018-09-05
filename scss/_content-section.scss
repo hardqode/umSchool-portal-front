@@ -1198,6 +1198,31 @@
       font-size: 14px;
       color: white;
     }
+    .owl-carousel {
+      .owl-dots {
+        display: initial;
+        float: right;
+        margin-top: 0;
+      }
+      .owl-dot {
+        width: 16px;
+        &:hover{
+          span{
+            background-color: rgba(255, 255, 255, 0.5);
+          }
+        }
+        &.active{
+          span{
+            background: $orange;
+          }
+        }
+        span {
+          width: 8px;
+          height: 8px;
+          background-color: rgba(255, 255, 255, 0.16);
+        }
+      }
+    }
     .tip-tools {
       display: flex;
       align-items: center;
