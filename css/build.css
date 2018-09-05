@@ -1305,6 +1305,7 @@ header {
     margin-bottom: 16px;
     color: #252525; }
   .teacher-master-group .master-group-item .master-group-item__share a {
+    word-break: break-all;
     font-size: 14px;
     color: #252525; }
     .teacher-master-group .master-group-item .master-group-item__share a:hover svg path {

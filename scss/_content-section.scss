@@ -1400,7 +1400,7 @@
     }
     .master-group-item__share {
       a {
-
+        word-break: break-all;
         font-size: 14px;
         color: $black;
         &:hover {
@@ -1658,9 +1658,9 @@
   h1 {
     margin-bottom: 24px;
   }
-  .form-container{
+  .form-container {
     margin-bottom: 32px;
-    input{
+    input {
       padding-left: 12px;
       padding-top: 11px;
       padding-bottom: 12px;
@@ -1668,16 +1668,16 @@
       margin-bottom: 0;
     }
   }
-  .question-container{
-    .form-container{
+  .question-container {
+    .form-container {
       margin-bottom: 24px;
-      &.tip{
-        &:last-of-type{
+      &.tip {
+        &:last-of-type {
           margin-bottom: 8px
         }
       }
     }
-    .add-tip{
+    .add-tip {
       font-size: 14px;
       padding: 8px 4px 7px;
     }
