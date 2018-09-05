@@ -1498,6 +1498,24 @@ header {
               background-color: transparent;
               color: #EB821F; }
 
+.create-lesson h1 {
+  margin-bottom: 24px; }
+.create-lesson .form-container {
+  margin-bottom: 32px; }
+  .create-lesson .form-container input {
+    padding-left: 12px;
+    padding-top: 11px;
+    padding-bottom: 12px;
+    font-size: 14px;
+    margin-bottom: 0; }
+.create-lesson .question-container .form-container {
+  margin-bottom: 24px; }
+  .create-lesson .question-container .form-container.tip:last-of-type {
+    margin-bottom: 8px; }
+.create-lesson .question-container .add-tip {
+  font-size: 14px;
+  padding: 8px 4px 7px; }
+
 .select2-container .select2-selection--single .select2-selection__rendered {
   font-size: 16px;
   color: #1a1a1a;
