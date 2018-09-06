@@ -63,7 +63,8 @@
             <div class="close-modal">
                 <button class="btn-icon" data-dismiss="modal">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 17.5633L12.3467 9.98417L19.9233 2.33917L17.5633 0L9.98833 7.64917L2.34167 0.0758333L0 2.4175L7.655 10.005L0.0758333 17.6583L2.4175 20L10.0108 12.34L17.6608 19.9233L20 17.5633Z" fill="#D8D4CE"/>
+                        <path d="M20 17.5633L12.3467 9.98417L19.9233 2.33917L17.5633 0L9.98833 7.64917L2.34167 0.0758333L0 2.4175L7.655 10.005L0.0758333 17.6583L2.4175 20L10.0108 12.34L17.6608 19.9233L20 17.5633Z"
+                              fill="#D8D4CE"/>
                     </svg>
                 </button>
             </div>
@@ -216,6 +217,11 @@
                     <div class="content">
                         <div class="create-lesson">
                             <h1>Урок 15. Взаимодействие неаллельных генов</h1>
+                            <!--<h1>Создание урока</h1>-->
+                            <!--<div class="form-container">-->
+                            <!--<label for="link">Название урока</label>-->
+                            <!--<input type="text" id="link" required value="Урок 15. ">-->
+                            <!--</div>-->
                             <div class="form-container">
                                 <label for="link">Ссылка на вебинар</label>
                                 <input type="text" id="link" required>
@@ -226,11 +232,32 @@
                                     <textarea id="lesson-description"></textarea>
                                 </div>
                             </div>
+                        </div>
+                        <div class="controls-row mt-5 mb-0">
+                            <button class="button btn-orange">Сохранить</button>
+                            <button class="button btn-orange-outline">Добавить задание</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 offset-lg-3 col-lg-9 px-lg-0">
+                <div class="content-container">
+                    <div class="content">
+                        <div class="homework-exercise">
+                            <div class="exercise-item">
+                                <div class="exercise-title">
+                                    <h2 class="number">Задание №1</h2> <a href="#" class="hint-link">Удалить</a>
+                                    <!--<div class="w-100"></div>-->
+                                    <!--<p class="exercise-text">Какой тип хромосомного определения пола является наиболее-->
+                                    <!--распространенным?-->
+                                    <!--</p>-->
+                                </div>
+                            </div>
                             <div class="question-container">
                                 <div class="question-inputs">
                                     <div class="form-container">
-                                        <label for="ex16">Задание №16</label>
-                                        <textarea rows="5" id="ex16" required></textarea>
+                                        <label for="ex16">Вопрос</label>
+                                        <textarea rows="2" id="ex16" required></textarea>
                                     </div>
                                     <div class="form-container tip">
                                         <label for="ex16tip1">Подсказка №1</label>
@@ -246,11 +273,84 @@
                         </div>
                         <div class="controls-row mt-5 mb-0">
                             <button class="button btn-orange">Сохранить</button>
+                            <button class="button btn-orange-outline">Добавить еще задание</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 offset-lg-3 col-lg-9 px-lg-0">
+                <div class="content-container">
+                    <div class="content">
+                        <div class="homework-exercise">
+                            <div class="exercise-item">
+                                <div class="exercise-title">
+                                    <h2 class="number">Задание №2</h2> <a href="#" class="hint-link">Удалить</a>
+                                    <!--<div class="w-100"></div>-->
+                                    <!--<p class="exercise-text">Какой тип хромосомного определения пола является наиболее-->
+                                    <!--распространенным?-->
+                                    <!--</p>-->
+                                </div>
+                            </div>
+                            <div class="question-container">
+                                <div class="question-inputs">
+                                    <div class="form-container">
+                                        <label for="ex16">Вопрос</label>
+                                        <textarea rows="2" required></textarea>
+                                    </div>
+                                    <div class="form-container">
+                                        <label for="ex16">Варианты ответов</label>
+                                        <input class="mt-1" required value="1. ">
+                                        <input class="mt-1" required value="2. ">
+                                        <input class="mt-1" required value="3. ">
+                                        <input class="mt-1" required value="4. ">
+                                    </div>
+                                    <!--<div class="form-container">-->
+                                    <div class="my-4">
+                                        <label for="ex16" class="mr-4">Правильный ответ</label>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                   value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                                   value="option2">
+                                            <label class="form-check-label" for="inlineCheckbox2">2</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                                   value="option3">
+                                            <label class="form-check-label" for="inlineCheckbox3">3</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                                   value="option3">
+                                            <label class="form-check-label" for="inlineCheckbox3">3</label>
+                                        </div>
+                                    </div>
+
+                                    <!--</div>-->
+                                    <div class="form-container tip">
+                                        <label for="ex16tip1">Подсказка №1</label>
+                                        <textarea rows="5" id="ex16tip1" required></textarea>
+                                    </div>
+                                    <div class="form-container tip">
+                                        <label for="ex16tip2">Подсказка №2</label>
+                                        <textarea rows="5" id="ex16tip2" required></textarea>
+                                    </div>
+                                </div>
+                                <button class="button btn-orange-outline border-0 add-tip">Добавить подсказку</button>
+                            </div>
+                        </div>
+                        <div class="controls-row mt-5 mb-0">
+                            <button class="button btn-orange">Сохранить</button>
+                            <button class="button btn-orange-outline">Добавить еще задание</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </section>
 <script src="js/jquery-3.2.1.min.js"></script>
@@ -307,10 +407,10 @@
     });
 </script>
 <script>
-    $('.add-tip').on('click',function () {
+    $('.add-tip').on('click', function () {
         var tips = $(this).parent().find('.tip');
         var container = $(this).parent().find('.question-inputs');
-        var num = tips.length+1;
+        var num = tips.length + 1;
         $(container).append('<div class="form-container tip">\n' +
             '                                    <label for="ex16tip' + num + '">Подсказка №' + num + '</label>\n' +
             '                                    <textarea rows="5" id="ex16tip' + num + '" required></textarea>\n' +
