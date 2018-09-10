@@ -222,7 +222,6 @@ header {
     .content-section .content-container {
       padding-top: 32px;
       padding-bottom: 32px;
-      /*max-height: calc(100vh - 80px);*/
       overflow-y: scroll;
       overflow-x: visible; } }
   .content-section .content-container .content {
@@ -1712,6 +1711,10 @@ header {
       left: 22px; }
 
 .left-menu-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
   padding-top: 32px;
   width: 100%;
   max-height: calc(100vh - 112px);

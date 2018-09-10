@@ -1,4 +1,8 @@
 .left-menu-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
   padding-top: 32px;
   width: 100%;
   max-height: calc(100vh - 112px);
