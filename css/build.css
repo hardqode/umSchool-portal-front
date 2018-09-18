@@ -114,7 +114,8 @@ button {
   cursor: pointer; }
   .button.btn-lg {
     padding: 14px 28px 14px;
-    font-size: 16px; }
+    font-size: 16px;
+    height: 48px; }
   .button.btn-orange {
     border: 0;
     color: white;
@@ -563,7 +564,7 @@ header {
 .input-group-row {
   margin-bottom: 13px; }
   .input-group-row h2 {
-    margin-bottom: 35px; }
+    margin-bottom: 30px; }
   .input-group-row .inputs-row {
     display: flex;
     flex-wrap: wrap; }
