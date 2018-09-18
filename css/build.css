@@ -16,7 +16,8 @@ h1 {
   font-weight: bold;
   line-height: 23px;
   font-size: 20px;
-  color: #252525; }
+  color: #252525;
+  margin-bottom: 0; }
 
 h2 {
   font-style: normal;
@@ -266,7 +267,7 @@ header {
   position: relative; }
   @media (min-width: 992px) {
     .masters-groups {
-      margin-bottom: 34px; } }
+      margin-bottom: 51px; } }
   .masters-groups h1 {
     margin-bottom: 16px; }
     @media (min-width: 992px) {
@@ -320,9 +321,9 @@ header {
     flex-wrap: wrap;
     background: rgba(52, 26, 17, 0.04);
     border-radius: 6px;
-    padding: 20px 24px 14px;
+    padding: 20px 24px 17px;
     transition: all .2s;
-    margin-bottom: 18px;
+    margin-bottom: 17px;
     cursor: pointer; }
     .masters-groups .master-group-item.checked {
       background-color: rgba(52, 26, 17, 0.12); }
@@ -383,6 +384,10 @@ header {
       @media (max-width: 991px) {
         .masters-groups .master-group-item .master-group-item__text {
           margin-bottom: 21px; } }
+      .masters-groups .master-group-item .master-group-item__text h2 {
+        line-height: 25px;
+        font-size: 18px;
+        font-weight: 500; }
       .masters-groups .master-group-item .master-group-item__text p {
         font-style: normal;
         font-weight: normal;
@@ -414,11 +419,15 @@ header {
       .masters-groups .master-group-item .master-group-item__price .price {
         font-size: 30px;
         line-height: 33px; }
+        .masters-groups .master-group-item .master-group-item__price .price + span {
+          font-size: 14px;
+          position: relative;
+          top: 1px; }
       .masters-groups .master-group-item .master-group-item__price.plus {
         max-width: 86px; }
     .masters-groups .master-group-item .splitter {
       margin-top: 18px;
-      margin-bottom: 16px;
+      margin-bottom: 20px;
       width: calc(100% + 48px);
       height: 1px;
       margin-left: -24px;
@@ -432,7 +441,8 @@ header {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%; }
+  width: 100%;
+  height: 15px; }
   .extra-container p {
     margin-bottom: 0;
     font-family: Ubuntu;
@@ -489,6 +499,11 @@ header {
     @media (min-width: 992px) {
       .homeworks .homework-item .homework-item__text {
         width: 497px; } }
+    .homeworks .homework-item .homework-item__text h2 {
+      line-height: 25px;
+      font-weight: 500;
+      margin-bottom: 4px;
+      font-size: 18px; }
     .homeworks .homework-item .homework-item__text .info {
       font-style: normal;
       font-weight: normal;
@@ -497,6 +512,8 @@ header {
       margin-bottom: 0;
       display: flex;
       align-items: center; }
+      .homeworks .homework-item .homework-item__text .info .icon {
+        opacity: .5; }
       .homeworks .homework-item .homework-item__text .info .secondary {
         color: #252525;
         opacity: 0.5; }
@@ -513,12 +530,14 @@ header {
       font-family: Ubuntu;
       font-style: italic;
       font-weight: normal;
-      line-height: 19px;
+      line-height: 20px;
       font-size: 14px;
       text-align: right;
+      position: relative;
+      top: -3px;
       color: rgba(37, 37, 37, 0.5); }
     .homeworks .homework-item .homework-item__grad button {
-      padding: 14px 27px;
+      padding: 15px 27px 15px;
       font-size: 16px; }
 
 .input-group-row {
@@ -1359,7 +1378,7 @@ header {
     margin-right: -24px;
     background-image: linear-gradient(to right, rgba(37, 37, 37, 0.4) 10%, rgba(255, 255, 255, 0) 0%);
     background-position: bottom;
-    background-size: 12px 1px;
+    background-size: 6px 1px;
     background-repeat: repeat-x; }
   .teacher-master-group .master-group-item .extra-container {
     display: flex;
@@ -1412,7 +1431,7 @@ header {
         margin-right: -24px;
         background-image: linear-gradient(to right, rgba(37, 37, 37, 0.4) 10%, rgba(255, 255, 255, 0) 0%);
         background-position: bottom;
-        background-size: 12px 1px;
+        background-size: 6px 1px;
         background-repeat: repeat-x; }
 
 .courses {
@@ -1456,7 +1475,7 @@ header {
       margin-right: -24px;
       background-image: linear-gradient(to right, rgba(37, 37, 37, 0.4) 10%, rgba(255, 255, 255, 0) 0%);
       background-position: bottom;
-      background-size: 12px 1px;
+      background-size: 6px 1px;
       background-repeat: repeat-x; }
     .checking-homework .checking-homework-item .title {
       display: flex;
@@ -1558,13 +1577,14 @@ header {
 .select2-container .select2-selection--single .select2-selection__rendered {
   font-size: 16px;
   color: #1a1a1a;
-  padding: 10px 37px 10px 16px; }
+  padding: 12px 40px 11px 14px;
+  line-height: 17px; }
 
 .select2:hover .select2-selection--single {
   border: 1px solid rgba(0, 0, 0, 0.2); }
 
 .select2-container--default .select2-selection--single {
-  height: 48px;
+  height: 40px;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 6px; }
 
@@ -1677,6 +1697,8 @@ header {
     margin-right: 10px;
     margin-left: 10px;
     margin-bottom: 0; }
+    .switcher-container label:nth-of-type(2) {
+      margin-right: 0; }
     @media (max-width: 991px) {
       .switcher-container label:first-of-type {
         margin-left: 0; } }

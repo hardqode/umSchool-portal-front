@@ -51,7 +51,7 @@
   margin-bottom: 32px;
   position: relative;
   @media(min-width: 992px) {
-    margin-bottom: 34px;
+    margin-bottom: 51px;
   }
   h1 {
     margin-bottom: 16px;
@@ -117,9 +117,9 @@
     flex-wrap: wrap;
     background: rgba(52, 26, 17, .04);
     border-radius: 6px;
-    padding: 20px 24px 14px;
+    padding: 20px 24px 17px;
     transition: all .2s;
-    margin-bottom: 18px;
+    margin-bottom: 17px;
     cursor: pointer;
     &.checked {
       background-color: rgba(52, 26, 17, 0.12);
@@ -189,6 +189,11 @@
       @media(max-width: 991px) {
         margin-bottom: 21px;
       }
+      h2{
+        line-height: 25px;
+        font-size: 18px;
+        font-weight: 500;
+      }
       p {
         font-style: normal;
         font-weight: normal;
@@ -220,6 +225,12 @@
       .price {
         font-size: 30px;
         line-height: 33px;
+
+        + span{
+          font-size: 14px;
+          position: relative;
+          top: 1px;
+        }
       }
       text-align: right;
       font-size: 15px;
@@ -233,7 +244,7 @@
     }
     .splitter {
       margin-top: 18px;
-      margin-bottom: 16px;
+      margin-bottom: 20px;
       width: calc(100% + 48px);
       height: 1px;
       margin-left: -24px;
@@ -251,6 +262,7 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  height: 15px;
   p {
     margin-bottom: 0;
     font-family: Ubuntu;
@@ -325,6 +337,12 @@
       @media(min-width: 992px) {
         width: 497px;
       }
+      h2{
+        line-height: 25px;
+        font-weight: 500;
+        margin-bottom: 4px;
+        font-size: 18px;
+      }
       .info {
         font-style: normal;
         font-weight: normal;
@@ -333,6 +351,9 @@
         margin-bottom: 0;
         display: flex;
         align-items: center;
+        .icon{
+          opacity: .5;
+        }
         .secondary {
           color: #252525;
           opacity: 0.5;
@@ -355,13 +376,15 @@
         font-family: Ubuntu;
         font-style: italic;
         font-weight: normal;
-        line-height: 19px;
+        line-height: 20px;
         font-size: 14px;
         text-align: right;
+        position: relative;
+        top: -3px;
         color: $secondaryBlack;
       }
       button {
-        padding: 14px 27px;
+        padding: 15px 27px 15px;
         font-size: 16px;
       }
     }
@@ -1455,7 +1478,7 @@
       margin-right: -24px;
       background-image: linear-gradient(to right, rgba(37, 37, 37, 0.4) 10%, rgba(255, 255, 255, 0) 0%);
       background-position: bottom;
-      background-size: 12px 1px;
+      background-size: 6px 1px;
       background-repeat: repeat-x;
     }
     .extra-container {
@@ -1521,7 +1544,7 @@
         margin-right: -24px;
         background-image: linear-gradient(to right, rgba(37, 37, 37, 0.4) 10%, rgba(255, 255, 255, 0) 0%);
         background-position: bottom;
-        background-size: 12px 1px;
+        background-size: 6px 1px;
         background-repeat: repeat-x;
       }
     }
@@ -1575,7 +1598,7 @@
       margin-right: -24px;
       background-image: linear-gradient(to right, rgba(37, 37, 37, 0.4) 10%, rgba(255, 255, 255, 0) 0%);
       background-position: bottom;
-      background-size: 12px 1px;
+      background-size: 6px 1px;
       background-repeat: repeat-x;
     }
     .title {
