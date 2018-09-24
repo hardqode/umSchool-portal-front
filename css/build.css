@@ -1594,6 +1594,8 @@ header {
 
 .create-lesson h1 {
   margin-bottom: 24px; }
+.create-lesson .lesson-description .form-container {
+  display: block; }
 .create-lesson .form-container {
   margin-bottom: 32px; }
   .create-lesson .form-container input {
