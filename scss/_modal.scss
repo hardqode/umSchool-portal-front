@@ -1,0 +1,16 @@
+.modal{
+  .modal-dialog{
+    width: 424px;
+  }
+  &__heading{
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 18px;
+    color: $black;
+    margin-bottom: 16px;
+  }
+  .btn-orange{
+    margin-top: 16px ;
+  }
+}

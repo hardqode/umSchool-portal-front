@@ -226,33 +226,91 @@
                                     <textarea id="lesson-description"></textarea>
                                 </div>
                             </div>
-                            <div class="question-container">
-                                <div class="question-inputs">
-                                    <div class="form-container">
-                                        <label for="ex16">Задание №16</label>
-                                        <textarea rows="5" id="ex16" required></textarea>
-                                    </div>
-                                    <div class="form-container tip">
-                                        <label for="ex16tip1">Подсказка №1</label>
-                                        <textarea rows="5" id="ex16tip1" required></textarea>
-                                    </div>
-                                    <div class="form-container tip">
-                                        <label for="ex16tip2">Подсказка №2</label>
-                                        <textarea rows="5" id="ex16tip2" required></textarea>
-                                    </div>
+                        </div>
+                        <div class="controls-row mt-5 mb-5">
+                            <button class="button btn-orange">Сохранить</button>
+                            <button class="button btn-orange-outline" data-toggle="modal" data-target="#addTask">Добавить задание</button>
+                        </div>
+                        <div class="question-container">
+                            <div class="question-inputs">
+                                <div class="form-container">
+                                    <label for="ex16">Задание №16</label>
+                                    <textarea rows="5" id="ex16" required></textarea>
+                                    <span class="delete">Удалить</span>
                                 </div>
-                                <button class="button btn-orange-outline border-0 add-tip">Добавить подсказку</button>
+                                <div class="form-container tip">
+                                    <label for="ex16tip1">Подсказка №1</label>
+                                    <textarea rows="5" id="ex16tip1" required></textarea>
+                                    <span class="delete">Удалить</span>
+                                </div>
+                                <div class="form-container tip">
+                                    <label for="ex16tip2">Подсказка №2</label>
+                                    <textarea rows="5" id="ex16tip2" required></textarea>
+                                    <span class="delete">Удалить</span>
+                                </div>
+                            </div>
+                            <button class="button btn-orange-outline border-0 add-tip">Добавить подсказку</button>
+
+                            <div class="controls-row mt-3 mb-3">
+                                <button class="button btn-orange">Сохранить</button>
+                                <button class="button btn-orange-outline" data-toggle="modal" data-target="#addTask">Добавить ещё задание</button>
                             </div>
                         </div>
-                        <div class="controls-row mt-5 mb-0">
-                            <button class="button btn-orange">Сохранить</button>
+                        <div class="question-container">
+                            <div class="question-inputs">
+                                <div class="form-container">
+                                    <label for="ex16">Задание №16</label>
+                                    <textarea rows="5" id="ex16" required></textarea>
+                                    <span class="delete">Удалить</span>
+                                </div>
+                                <div class="form-container tip">
+                                    <label for="ex16tip1">Подсказка №1</label>
+                                    <textarea rows="5" id="ex16tip1" required></textarea>
+                                    <span class="delete">Удалить</span>
+                                </div>
+                                <div class="form-container tip">
+                                    <label for="ex16tip2">Подсказка №2</label>
+                                    <textarea rows="5" id="ex16tip2" required></textarea>
+                                    <span class="delete">Удалить</span>
+                                </div>
+                            </div>
+                            <button class="button btn-orange-outline border-0 add-tip">Добавить подсказку</button>
+
+                            <div class="controls-row mt-3 mb-3">
+                                <button class="button btn-orange">Сохранить</button>
+                                <button class="button btn-orange-outline" data-toggle="modal" data-target="#addTask">Добавить ещё задание</button>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<div class="modal fade" id="addTask" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 14.0507L9.87733 7.98733L15.9387 1.87133L14.0507 0L7.99067 6.11933L1.87333 0.0606667L0 1.934L6.124 8.004L0.0606667 14.1267L1.934 16L8.00867 9.872L14.1287 15.9387L16 14.0507Z" fill="#341A11"/>
+                    </svg>
+                </button>
+                <div class="modal__heading">Новое задание</div>
+                <div class="custom-radio">
+                    <input type="radio" id="radio1" name="task">
+                    <label for="radio1">Тестовое задание</label>
+                </div>
+                <div class="custom-radio">
+                    <input type="radio" id="radio2" name="task">
+                    <label for="radio2">Задание с развёрнутым ответом</label>
+                </div>
+                <button class="button btn-orange">Добавить</button>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
@@ -313,6 +371,7 @@
         $(container).append('<div class="form-container tip">\n' +
             '                                    <label for="ex16tip' + num + '">Подсказка №' + num + '</label>\n' +
             '                                    <textarea rows="5" id="ex16tip' + num + '" required></textarea>\n' +
+            '<span class="delete">Удалить</span>\n' +
             '                                </div>')
     })
 </script>
