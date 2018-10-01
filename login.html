@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width = device-width,initial-scale=1" name="viewport">
+    <title>UmSchool</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300i,400,400i,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="./css/build.css">
+</head>
+<body>
+<section class="auth">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4 mx-auto auth-content">
+                <div class="logo-container">
+                    <a href="#">
+                        <img src="./assets/svg/logo.svg" class="logo" alt="">
+                    </a>
+                </div>
+                <div class="auth-title">Вход</div>
+
+                <div class="form-container">
+                    <label for="check1">Логин</label>
+                    <input type="text" id="check1" required>
+                    <span class="error-msg">некорректно заполнено поле</span>
+                </div>
+
+                <div class="form-container">
+                    <label for="pswd">Пароль</label>
+                    <input type="password" id="pswd" required>
+                    <span class="error-msg">некорректно заполнено поле</span>
+                    <a href="#" class="link">Забыли пароль?</a>
+                </div>
+                <button class="button btn-lg btn-orange d-block w-100">Войти</button>
+                <a href="#" class="auth-link">Регистрация</a>
+
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="./js/jquery.inputmask.bundle.min.js"></script>
+<script src="./js/inputmask-scripts.js"></script>
+
+</body>
+</html>

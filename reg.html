@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width = device-width,initial-scale=1" name="viewport">
+    <title>UmSchool</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300i,400,400i,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="./css/build.css">
+</head>
+<body>
+<section class="auth">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-4 mx-auto auth-content">
+                <div class="logo-container">
+                    <a href="#">
+                        <img src="./assets/svg/logo.svg" class="logo" alt="">
+                    </a>
+                </div>
+                <div class="auth-title">Регистрация</div>
+
+                <div class="form-container">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" required>
+                    <span class="error-msg">некорректно заполнено поле</span>
+                </div>
+                <div class="form-container">
+                    <label for="mail">Email</label>
+                    <input type="text" id="mail" required data-inputmask="'alias': 'email'">
+                    <span class="error-msg">некорректно заполнено поле</span>
+                </div>
+                <div class="form-container">
+                    <label for="vk">Вконтакте</label>
+                    <input type="text" id="vk" required data-inputmask="'mask': 'https://vk.com/*{1,40}'">
+                    <span class="error-msg">некорректно заполнено поле</span>
+                </div>
+
+                <div class="form-container w-pswd">
+                    <label for="pswd">Пароль</label>
+                    <input type="password" id="pswd" required>
+                    <span class="error-msg">некорректно заполнено поле</span>
+                    <div class="form-container__pswdtoggle">
+                        <img src="./assets/svg/show-pswd.svg" alt="">
+                    </div>
+                </div>
+                <div class="form-container w-pswd">
+                    <label for="pswd-r">Повторите пароль</label>
+                    <input type="password" id="pswd-r" required>
+                    <span class="error-msg">некорректно заполнено поле</span>
+                    <div class="form-container__pswdtoggle">
+                        <img src="./assets/svg/show-pswd.svg" alt="">
+                    </div>
+                </div>
+                <button class="button btn-lg btn-orange d-block w-100">Войти</button>
+                <a href="#" class="auth-link">Есть аккаунт? Войти</a>
+
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="./js/jquery.inputmask.bundle.min.js"></script>
+<script src="./js/inputmask-scripts.js"></script>
+<script>
+    $('.form-container__pswdtoggle').on('click',function () {
+        let img = $(this).find('img');
+        let input = $(this).parent().find('input');
+        if($(input).attr('type') === 'text'){
+            $(img).attr('src','./assets/svg/show-pswd.svg')
+            $(input).attr('type','password');
+        }else{
+            $(img).attr('src','./assets/svg/hide-pswd.svg')
+            $(input).attr('type','text')
+        }
+    })
+</script>
+
+</body>
+</html>
