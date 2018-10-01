@@ -18,3 +18,5 @@
 * https://mskuroedov.github.io/umSchool-portal/teacher-personal-page.html
 * https://mskuroedov.github.io/umSchool-portal/teachers.html
 * https://mskuroedov.github.io/umSchool-portal/thnx.html
+* https://mskuroedov.github.io/umSchool-portal/reg.html
+* https://mskuroedov.github.io/umSchool-portal/login.html
