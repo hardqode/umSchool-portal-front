@@ -222,7 +222,10 @@ button {
     display: none; }
     .custom-radio input + label {
       padding-left: 22px;
-      position: relative; }
+      position: relative;
+      cursor: pointer; }
+      .custom-radio input + label:hover:before {
+        opacity: .5; }
       .custom-radio input + label:before {
         content: '';
         position: absolute;

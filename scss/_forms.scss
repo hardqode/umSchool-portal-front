@@ -102,6 +102,12 @@
     + label{
       padding-left: 22px;
       position: relative;
+      cursor: pointer;
+      &:hover{
+        &:before{
+          opacity: .5;
+        }
+      }
       &:before {
         content:'';
         position: absolute;
