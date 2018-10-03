@@ -1706,6 +1706,19 @@ header {
   .question-container .add-tip {
     font-size: 14px;
     padding: 8px 4px 7px; }
+  .question-container .varitans-check {
+    display: flex;
+    align-items: center; }
+    .question-container .varitans-check__title {
+      font-style: normal;
+      font-weight: normal;
+      line-height: 16px;
+      height: 16px;
+      font-size: 14px;
+      margin-right: 16px; }
+    .question-container .varitans-check .custom-radio {
+      margin-right: 21px;
+      margin-bottom: 0; }
 
 .select2-container .select2-selection--single .select2-selection__rendered {
   font-size: 16px;
